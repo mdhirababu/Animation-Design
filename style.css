@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.hira_babu{
+    background: linear-gradient(#17EAD9,#6078EA);
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    font-family: sans-serif;
+
+}
+h2{
+    color: #6078EA;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 50px;
+    z-index: 1;
+
+}
+ul li{
+    position: absolute;
+    border: 1px solid #6078EA;
+    width: 30px;
+    height: 30px;
+    list-style: none;
+    opacity: 0;
+    background: #6078EA;
+}
+@keyframes square {
+    0%{
+        transform: scale(0) rotateY(0deg);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(5) rotateY(1000deg);
+        opacity: 1;
+    }
+    
+}
+.squre li{
+    top: 50vh;
+    left: 50vw;
+    animation: square 10s linear infinite;
+}
+.squre li:nth-child(2){
+    top: 50vh;
+    left: 50vw;
+    animation-delay: 2s;
+}
+.squre li:nth-child(3){
+    top: 80vh;
+    left: 10vw;
+    animation-delay: 3s;
+
+}
+.squre li:nth-child(4){
+    top: 80vh;
+    left: 10vw;
+    animation-delay: 4s;
+
+}
+.squre li:nth-child(5){
+    top: 10vh;
+    left: 75vw;
+    animation-delay: 5s;
+
+}
+.squre li:nth-child(6){
+    top: 10vh;
+    left: 75vw;
+    animation-delay: 6s;
+
+}
+.squre li:nth-child(7){
+    top: 10vh;
+    left: 10vw;
+    animation-delay: 7s;
+
+}
+.squre li:nth-child(8){
+    top: 10vh;
+    left: 10vw;
+    animation-delay: 8s;
+
+}
+.squre li:nth-child(9){
+    top: 85vh;
+    left: 85vw;
+    animation-delay: 9s;
+
+}
+.squre li:nth-child(10){
+    top: 85vh;
+    left: 85vw;
+    animation-delay: 10s;
+
+}
+
+@keyframes circle {
+    0%{
+        transform: scale(0) rotateY(0deg);
+        opacity: 0;
+        bottom: 0;
+        border-radius: 50%;
+    }
+    100%{
+        transform: scale(5) rotateY(1000deg);
+        opacity: 1;
+        bottom: 90vh;
+        border-radius: 50%;
+    }
+    
+}
+
+.circle li{
+    bottom: 0;
+    left: 15vw;
+    animation: circle 10s linear infinite;
+}
+.circle li:nth-child(2){
+    left: 35vw;
+    animation-delay: 2s;
+
+}
+.circle li:nth-child(3){
+    left: 50vw;
+    animation-delay: 4s;
+}
+.circle li:nth-child(4){
+    left: 65vw;
+    animation-delay: 6s;
+}
+.circle li:nth-child(5){
+    left: 80w; 
+    animation-delay: 8s;
+}
